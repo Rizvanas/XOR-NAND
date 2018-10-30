@@ -22,11 +22,9 @@ int main(int argc, char **argv) {
 }
 
 int getXOR(int a, int b) {
-	int result = (a | b) & ~(a & b);
-	return result;
+	return (a | b) & ~(a & b);
 }
 
 int getNAND(int a, int b) {
-	int result = ~(~(~(a & b) & a) & ~(~(a & b) & b));
-	return result;
+	return ~(~(~(a & b) & a) & ~(~(a & b) & b));
 }
