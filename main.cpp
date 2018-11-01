@@ -4,6 +4,12 @@ int getXOR(int a, int b);
 int getNAND(int a, int b);
 
 int main(int argc, char **argv) {
+
+	if (argc < 3) {
+		std::cerr << "Missing argv" << std::endl;
+		return 1;
+	}
+
 	char *a{ nullptr }, *b{ nullptr };
 	int num1{ 0 }, num2{ 0 };
 
